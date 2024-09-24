@@ -21,5 +21,6 @@ jobs:
       - run: |
           echo "event name is:" ${{ github.event_name }}
           echo "branch name is:" ${{ github.head_ref || github.ref_name }}
-          ls
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree
     
